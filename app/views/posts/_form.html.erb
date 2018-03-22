@@ -1,0 +1,28 @@
+<%= form_for @post do |f| %>
+
+	<% if @post.errors.full_messages.any? %>
+  <% @post.errors.full_messages.each do |error_message| %>
+    <%= error_message if @post.errors.full_messages.first == error_message %> <br />
+
+  <% end %>
+<% end %>
+
+<p>
+	<%= f.label :title %>
+	<br>
+	<%= f.text_field :title %>
+</p>
+
+<p>
+	<%= f.label :description %> 
+	<br>
+	<%= f.text_area :description %> 
+</p>
+
+<p>
+	<%= f.button :submit, :class => "btn btn-warning btn-small", :label => "Save Changes" %>
+
+	<%= submit_tag("Refresh", { :name => 'reset', :id => 'reset_button', :type => "reset", :class => 'btn btn-default'}) %>
+</p>
+
+ <% end %>

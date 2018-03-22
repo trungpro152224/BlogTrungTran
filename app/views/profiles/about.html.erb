@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script src="files/theme/jquery.easypiechart.min.js"></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="wrapper">
+	<div class="header5">
+		<nav>
+		
+			<div class="logo"> TrungTH </div>
+			<div class="menu-icon">
+			 <span class="glyphicon glyphicon-fire" aria-hidden = "true"></span>
+		</div>
+			<ul>
+				<li><%= link_to "Home" ,root_path, :class=>"login"%></li>
+
+				<li><%= link_to "Posts","#", :class=>"login"%></li>
+
+			
+				  <li>
+				  <%= link_to('Log in',"#" , :class=>"login")  %>  
+				  </li>
+
+			
+			</ul>
+		</nav>
+	</div>
+	</div>
+
+<marquee>Failure is the condiment that gives success its flavor!   - (Truman Capote) - </marquee>
+
+
+<div id ="wrapper-body">
+
+<!-- image-profiles -->
+<div class="about-profile">
+    <%=image_tag("avatar.jpg", alt: "Avatar", :class => "style-image")%>
+	<div class="hover-image-change-text"> 
+	</div>
+
+</div>
+
+
+<!-- contact -->
+<div class="contact">
+
+<h1>Contact</h1>
+	<i class="material-icons" style="font-size:25px">person</i>
+	<h3 class="name"> Full Name</h3>
+	<p class="name">Trần Hữu Trung</p>
+
+	<i class="fa fa-birthday-cake" style="font-size:18px"></i>
+	<h3 class="birth"> Date Of Birth</h3>
+	<p class="birth">Dec 15, 1995</p>
+	
+	<i class="fa fa-venus-mars" style="font-size:25px;"></i>
+	<h3 class="gender"> Gender</h3>
+	<p class="gender">Male</p>
+
+	<i class="material-icons">ring_volume</i>
+	<h3 class="phone"> Phone Number</h3>
+	<p class="phone"> +84 0978 860 750</p>
+	
+	<i class="material-icons">mail</i>
+	<h3 class="gmail"> Gmail</h3>
+	<p class="gmail">trungpro151224@gmail.com</p>
+
+	<i class="material-icons" style="font-size:24px">person_pin_circle</i>
+	<h3 class="address"> Address</h3>
+	<p class="address">915/15 Le Van Luong str., Dist .Nha Be, Ho Chi Minh City</p>
+
+	<i class="fa fa-facebook-square" style="font-size:24px"></i>
+	<h3 class="face"> Facebook</h3>
+	<br>
+	<a href="https://www.facebook.com/trantrung1512" class="face">https://www.facebook.com/trantrung1512</a>
+
+</div>
+
+
+<!-- education -->
+<div class="education">
+
+	<h1>Education</h1>
+
+
+	<table>
+		<tr> 
+			<td><p><strong>2000-2005 </strong></p>  </td>
+			<td> <p>An Phu Trung Primary School - Ben Tre</p> </td>
+			</tr>
+
+			<tr>
+			<td><p><strong>2005-2009 </strong></p>  </td>
+			<td> <p>An Phu Trung Junior High School - Ben Tre</p> </td>
+			</tr>
+
+			<tr>
+			<td><p><strong>2010-2013 </strong></p>  </td>
+			<td> <p>Phan Thanh Gian High School - Ben Tre</p> </td>
+			</tr>
+
+			<tr>
+			<td><p><strong> 2013-now </strong></p>  </td>
+			<td> <p>Ton Duc Thang University - Ho Chi Minh </p> </td>
+			</tr>
+
+	</table>
+
+</div>
+
+
+<!-- skills -->
+<div class="skills-all">
+
+	<h1 class="skill-title"> Software Skills</h1>
+
+		<div class="skills-box">
+
+			<p>HTML5, CSS3</p>
+			<div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+    <span>90% Complete</span>
+  </div>
+</div>
+		</div>	
+
+
+
+	<div class="skills-box">	
+			<p>C#</p>
+			<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+    <span>70% Complete</span>
+  </div>
+</div>
+	</div>
+
+		<div class="skills-box">
+		
+			<p>RUBY ON RAILS</p>
+			<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+    <span>75% Complete</span>
+  </div>
+	</div>
+		</div>	
+
+		<div class="skills-box">
+		
+			<p>BOOTSTRAP</p>
+			<div class="progress">
+  <div class="progress-bar progress-bar-muted progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+    <span>70% Complete</span>
+  </div>
+</div>
+		</div>	
+
+	<div class="skills-box">
+		
+			<p>JAVASCRIPT</p>
+			<div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+    <span >65% Complete </span>
+  </div>
+</div>
+
+		</div>	
+
+</div>
+
+
+
+
+<!-- languages -->
+<div class="languages">
+
+	<h1>Languages</h1>
+
+<div class="language-bar">
+
+	<div class="language-bar-listen">
+	 <p>Listening</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:45%">45%</div>
+          </div>
+		</div>
+
+		<div class="language-bar-speak"> 
+          <p>Speaking</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">
+              <div class="w3-center w3-text-white">60%</div>
+            </div>
+          </div>
+          </div>
+		
+
+		<div class="language-bar-read">
+          <p>Reading</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">65%</div>
+          </div>
+		</div>
+
+
+		<div class="language-bar-write">
+          <p>Writing</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">
+              <div class="w3-center w3-text-white">70%</div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+</div>
+
+<!-- about me -->
+<div class="about-me">
+
+		<h1>About Me</h1>
+
+	<div class="moralism">
+		<strong>1. Close - Mouthed</strong>
+		<p>= >>>> But many feelings !!!</p>
+	</div>
+
+	<div class="moralism">
+		<strong>2. Hasty</strong>
+		<p>= >>>> But good stomach !!!</p>
+	</div>
+
+	<div class="moralism">
+		<strong>3. Dry</strong>
+		<p>= >>>> But honestly !!!!</p>
+	</div>
+
+	<div class="moralism">
+		<strong>4. Silence </strong>
+		<p>= >>>> But I do care !!!</p>
+	</div>
+
+	<div class="moralism">
+		<strong>5. Cold</strong>
+		<p>= >>> But love true !!!</p>
+	</div>
+</div>
+
+
+<!-- interests -->
+<div class="interests">
+	
+	<h1>Interests</h1>
+
+	<div class="interest-sport">
+		<i class="material-icons" style="font-size:24px;color:red">rowing</i>
+			<h2>Sport</h2>
+		<%=image_tag("image-sport.jpeg", alt: "Avatar", :class => "image-sport")%>
+		</div>
+
+	<div class="interest-travel">
+		<i class="fa fa-motorcycle" style="font-size:18px;color:red"></i>
+		<h2>Travel</h2>
+		<%=image_tag("image-travel.jpeg", alt: "Avatar", :class => "image-travel")%>
+		</div>
+
+	<div class="interest-code">
+		<i class="material-icons" style="font-size:24px;color:red">keyboard</i>
+		<h2>Code</h2>
+		<%=image_tag("image-code.jpg", alt: "Avatar", :class => "image-code")%>
+		</div>
+
+	
+	<div class="interest-music">
+		<i class="material-icons" style="font-size:24px;color:red">headset_mic</i>
+		<h2 class="music-box">Music</h2>
+		<%=image_tag("image-music.jpeg", alt: "Avatar", :class => "image-music")%>
+		</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

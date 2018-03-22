@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+
+
+	<div class="wrapper">
+	<div class="header2">
+		<nav>
+		
+			<div class="logo"> TrungTH </div>
+			<div class="menu-icon">
+			 <span class="glyphicon glyphicon-fire" aria-hidden = "true"></span>
+		</div>
+			<ul>
+				<li><%= link_to "Home" ,root_path, :class=>"login"%></li>
+
+				<li><%= link_to "Posts", posts_path, :class=>"login"%></li>
+
+				<% if user_signed_in? %>
+				  <li>
+				  <%= link_to('Log out', destroy_user_session_path, method: :delete, :class=>"login") %>  
+
+				   
+
+				  </li>
+				<% else %>
+				  <li>
+				  <%= link_to('Log in', new_user_session_path, :class=>"login")  %>  
+				  </li>
+				
+				<% end %>
+			</ul>
+		</nav>
+	</div>
+	</div>
+
+<h1 class="new-post-wrapper"> NEW POST</h1>
+	<%= render 'form' %>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Tran Trung</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+	
+	<%= favicon_link_tag 'favicon.ico' %>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+      </script>
+
+  <body>
+	
+    <%= yield %>
+
+    <footer>
+		<div class="center-foot">
+			<div class="icon">
+			<ul>	
+			<li><a href="https://www.facebook.com/trantrung1512"><i class="fa fa-facebook-official" aria-hidden = "true"></i></a> </li>
+			<li><a href="https://www.instagram.com/trung151224/"><i class="fa fa-instagram" aria-hidden = "true"></i></a> </li>
+			<li><a href="https://github.com/trungpro152224"><i class="fa fa-github" aria-hidden = "true"></i></a> </li>
+			<li><a href="https://twitter.com/trung151224"><i class="fa fa-twitter" aria-hidden = "true"></i></a> </li>
+			<li><a href="https://www.youtube.com/channel/UCBmyulDy1py6HAWPg0DvyqQ?view_as=subscriber"><i class="fa fa-youtube" aria-hidden = "true"></i></a> </li>
+			</ul>
+			</div>
+			<p> © 2018 Trung Tran Huu • All rights reserved. </p>
+		</div>
+</footer>
+
+  </body>
+</html>
